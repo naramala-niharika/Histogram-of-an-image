@@ -42,8 +42,10 @@ plt.show()
 
 # Display the histogram of gray scale image and any one channel histogram from color image:
 
+import cv2
+import matplotlib.pyplot as plt
 gray_image = cv2.imread("images.jpg")
-color_image = cv2.imread("grey 1.jpg")
+color_image = cv2.imread("grey.2.jpg")
 gray_hist = cv2.calcHist([gray_image],[0],None,[256],[0,256])
 color_hist = cv2.calcHist([color_image],[0],None,[256],[0,256])
 plt.figure()
